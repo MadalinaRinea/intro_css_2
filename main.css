@@ -1,0 +1,99 @@
+body {
+    color: red;
+}
+
+/* Universal selector */
+* { 
+    font-family: verdana,sans-serif;
+}
+
+/* Descendent selector */
+div p { 
+    border: 1px solid red; 
+}
+
+/* Child selector */
+div > span {
+     color: blue;
+}
+
+/* Sibling selector */
+div + p { 
+    color: green; 
+}
+
+/* Sibling selector(pe orice pozitie) */
+div ~ p {
+     border: 1px solid yellow;
+}
+
+[id] {
+     color: lightblue; 
+}
+
+[disabled] {
+    color: lightgray;
+}
+
+[id="container"] { 
+    border: 1px solid lightsalmon; 
+}
+
+[class~="error"] { 
+    color: red; 
+}
+
+/* main-article */
+[id|="main"] { 
+    color: lawngreen;
+} 
+
+[href^="https"] { 
+    color: lightseagreen; 
+}
+
+li:first-child {
+    color: lime;
+}
+
+ol > li:nth-child(even) {
+    color: saddlebrown;
+}
+
+:checked {
+   width: 30px;
+   height: 30px;
+}
+
+:checked + label {
+    color: lime;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+  
+/* visited link */
+a:visited {
+    color: green;
+}
+  
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+  
+/* selected link */
+a:active {
+    color: blue;
+}
+
+q::before {
+    content: "«";
+    color: blue;
+}
+q::after {
+    content: "»";
+    color: lightblue;
+}
